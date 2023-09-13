@@ -9,22 +9,22 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.taptapfirebase.RunnerTests</string>
+	<string>com.dashinside.taptapfirebase</string>
 	<key>PROJECT_ID</key>
 	<string>tap-tap-c427d</string>
 	<key>STORAGE_BUCKET</key>
 	<string>tap-tap-c427d.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:504833458426:ios:394ffdb115756f8c2e4943</string>
+	<string>1:504833458426:ios:c62f76fff3c697d02e4943</string>
 </dict>
 </plist>
