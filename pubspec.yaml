@@ -18,6 +18,7 @@ dependencies:
   # Utils
   dartz: ^0.10.1
   get_it: ^7.6.4
+  device_info_plus: ^9.0.3
 
 dev_dependencies:
   # Linter
