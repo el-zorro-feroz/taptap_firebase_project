@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:taptapfirebase/src/presentation/pages/test_color_page.dart';
 
 class TapTapApp extends StatelessWidget {
   const TapTapApp({super.key});
@@ -12,12 +14,12 @@ class TapTapApp extends StatelessWidget {
           seedColor: Colors.orange,
         ),
       ),
-      home: const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(
-            strokeAlign: 1.0,
-          ),
-        ),
+      home: TestColorPage(
+        onTap: () {
+          if (kDebugMode) {
+            print('test');
+          }
+        },
       ),
     );
   }
