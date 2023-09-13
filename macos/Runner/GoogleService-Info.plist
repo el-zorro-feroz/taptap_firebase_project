@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBrTS_T_DxAPaPpsaX-rEzbfLCYN5iCupo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>504833458426</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.taptapfirebase.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>tap-tap-c427d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tap-tap-c427d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:504833458426:ios:394ffdb115756f8c2e4943</string>
+</dict>
+</plist>
