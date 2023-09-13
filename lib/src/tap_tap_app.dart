@@ -14,13 +14,7 @@ class TapTapApp extends StatelessWidget {
           seedColor: Colors.orange,
         ),
       ),
-      home: TestColorPage(
-        onTap: () {
-          if (kDebugMode) {
-            print('test');
-          }
-        },
-      ),
+      home: const TestColorPage(),
     );
   }
 }

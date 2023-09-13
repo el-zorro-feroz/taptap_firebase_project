@@ -1,36 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:taptapfirebase/src/presentation/controller/test_color_controller.dart';
 
-class TestColorPage extends StatefulWidget {
-  final void Function() onTap;
+class TestColorPage extends StatelessWidget {
+  const TestColorPage({super.key});
 
-  const TestColorPage({super.key, required this.onTap});
-
-  @override
-  State<TestColorPage> createState() => _TestColorPageState();
-}
-
-class _TestColorPageState extends State<TestColorPage> {
-  bool isMechanismWork = false;
-
-  Color getMechanismStateColor() {
-    if (isMechanismWork) {
-      return Colors.green;
-    } else {
-      return Colors.red;
-    }
-  }
+  static const Color _enabledColor = Colors.green;
+  static const Color _disabledColor = Colors.red;
 
   @override
   Widget build(BuildContext context) {
+    final TestColorController controller = TestColorController();
+
     final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final TextTheme textTheme = Theme.of(context).textTheme;
 
-    void onMechanismButtonTap() {
-      setState(() {
-        isMechanismWork = !isMechanismWork;
-      });
-
-      widget.onTap();
+    void onTap() {
+      controller.changeMechanismWorkState();
     }
 
     return Scaffold(
@@ -40,21 +25,26 @@ class _TestColorPageState extends State<TestColorPage> {
         ),
       ),
       body: Center(
-        child: InkWell(
-          onTap: onMechanismButtonTap,
-          child: Container(
-            padding: const EdgeInsets.all(16.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(32.0),
-              color: getMechanismStateColor(),
-            ),
-            child: Text(
-              'Test Color Page',
-              style: textTheme.bodyLarge?.copyWith(
-                color: colorScheme.background,
+        child: AnimatedBuilder(
+          animation: controller,
+          builder: (_, __) {
+            return InkWell(
+              onTap: onTap,
+              child: Container(
+                padding: const EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(32.0),
+                  color: controller.isMechanismWork ? _enabledColor : _disabledColor,
+                ),
+                child: Text(
+                  'Test Color Page',
+                  style: textTheme.bodyLarge?.copyWith(
+                    color: colorScheme.surface,
+                  ),
+                ),
               ),
-            ),
-          ),
+            );
+          },
         ),
       ),
     );
