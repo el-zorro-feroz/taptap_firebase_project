@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:taptapfirebase/src/presentation/controller/server_text_controller.dart';
+import 'package:taptapfirebase/src/presentation/page/stl_test_page.dart';
 
 class TapTapApp extends StatelessWidget {
   const TapTapApp({super.key});
@@ -12,12 +14,9 @@ class TapTapApp extends StatelessWidget {
           seedColor: Colors.orange,
         ),
       ),
-      home: const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(
-            strokeAlign: 1.0,
-          ),
-        ),
+      home: StlTestPage(
+        serverTextController1: ServerTextController(),
+        serverTextController2: ServerTextController(),
       ),
     );
   }

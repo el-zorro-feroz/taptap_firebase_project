@@ -7,24 +7,20 @@ environment:
   sdk: ">=3.2.0-42.2.beta <4.0.0"
 
 dependencies:
-  # Core
+  cloud_firestore: ^4.9.1
+  dartz: ^0.10.1
+  device_info_plus: ^9.0.3
+  firebase_core: ^2.15.1
   flutter:
     sdk: flutter
-  # Firebase
-  firebase_core: ^2.15.1
-  cloud_firestore: ^4.9.1
-  # Provider
-  riverpod: ^2.4.0
-  # Utils
-  dartz: ^0.10.1
   get_it: ^7.6.4
-  device_info_plus: ^9.0.3
+  injectable: ^2.3.0
+  riverpod: ^2.4.0
 
 dev_dependencies:
-  # Linter
+  flutter_lints: ^2.0.3
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.3
 
 flutter:
   uses-material-design: true
